@@ -6,37 +6,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{
-    background: #000;
-    /*background-image: url('https://media1.tenor.com/images/56689a24df13c2a581babc18d611dc85/tenor.gif?itemid=9425404');*/
+    background: #f00;
+    background-image: url('https://media.tenor.com/images/68a8466e0d1b6fea53458d6733c331c0/tenor.gif');
     margin-bottom: 50px;
 }
 p {
   text-align: center;
   font-size: 60px;
   margin-top: 50px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 a{
-  color: #fff;  
+  color: #000;  
 }
 </style>
 </head>
 <body>
 
 <center>
-
-<img src="https://media1.tenor.com/images/edae511bf7d3a50b66c3df0b718f6a9f/tenor.gif?itemid=16820940"width=400" height="300">
+<img src="https://media.tenor.com/images/5f9fcd9527a10f450f07ddd05a1df683/tenor.gif"width=400" height="300">
 <br>
 
 <a>
 <audio controls loop autoplay>
-<source src="he_leaves.mp3" type="audio/mpeg">
+<source src="dufam_ze.mp3" type="audio/mpeg">
 </audio> <br>
 
 
-<p>kamaráti, dúfam že vás umieračik nedostal a že ste to stihli v pokoji a bez ujmy na zdraví
-<!--<img src="https://i.imgur.com/TbQuWLZ.png" height="80">-->
+<p>Rozdelenie komisií deadline by Milan</p>
+<p id="demo"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 24, 2021 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<!--<img src="https://i.imgur.com/TbQuWLZ.png" height="80">
 <img src="nemo.png" height="80">
 </p>
 
@@ -89,7 +119,7 @@ a{
 <img src="https://media1.tenor.com/images/63fb7a1468f9847511c0476b408c7779/tenor.gif?itemid=20942536
 "width=200" height="200">
 
-
+-->
 
 
 </center>
